@@ -9,7 +9,7 @@ fi
 
 repo_url=$1
 target_dir=$2
-install_dependencies_flag=$3
+install_dependencies=$3
 username=$(echo ${repo_url} | rev | cut -d/ -f2 | rev)
 project_name=$(echo ${repo_url} | rev | cut -d/ -f1 | rev)
 destination_dir_name="${target_dir}/${username}_${project_name}"
@@ -22,7 +22,7 @@ fi
 
 git clone ${repo_url} "${destination_dir_name}"
 
-if [[ $install_dependencies_flag == '--install-deps' ]]; then
+if [[ $install_dependencies == 'true' ]]; then
   cd ${destination_dir_name}
   npm install
   cd -
