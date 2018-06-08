@@ -17,6 +17,3 @@ General Usage: `./clone_all_repos.sh [-i] [-n assignment_name || -f <repos_file.
   - you can copy this list of get repos from the lab submissions spreadsheet
 
 2. Run: `./clone_all_repos.sh -f links/apple-css.txt [-i]` 
-
-Tasks:
-- get 2 missing usernames: (zhaoyanxie, MayuriR29, kod2nd, ngyl88, huichingheng, Qwetuo, psmzakaria)
