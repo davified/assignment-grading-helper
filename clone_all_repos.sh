@@ -3,9 +3,9 @@
 set -e
 
 exit_with_error() { 
-  echo "ERROR: $0 [-i] [-n assignment_name || -f <repos_file.txt>]" 1>&2
-  echo "ERROR: Example: $0 -n js-basics-3" 1>&2
-  echo "ERROR: Example: $0 -f links/apple-css.txt -i" 1>&2
+  echo "ERROR: $0 [-i] [-n assignment_name || -f <repos_file.txt>]"
+  echo "ERROR: Example: $0 -n js-basics-3"
+  echo "ERROR: Example: $0 -f links/apple-css.txt -i"
   exit 1
   }
 
